@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import { configMiddleware } from "./middleware/index.js";
+import { connectionDB } from "./config/db.js";
 
 dotenv.config();
 export const app = express();
@@ -9,5 +10,6 @@ export const app = express();
 configMiddleware(app);
 
 //Routes
-
-//Databases
+app.get("/", (req, res) => {
+  res.json("Hola");
+});
