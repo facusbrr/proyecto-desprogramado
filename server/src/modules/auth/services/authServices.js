@@ -31,6 +31,7 @@ const loginUser = async (loginData) => {
       email
     );
     const user = rows[0];
+
     if (!user || !(await bcrypt.compare(password, user.password))) {
       console.error("Sus datos son incorrectos");
     }
