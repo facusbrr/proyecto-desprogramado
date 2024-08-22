@@ -6,17 +6,18 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
-    "mysql2": "^3.11.0"
+    "mysql2": "^3.11.0",
+    "@faker-js/faker": "^8.4.1"
   },
   "name": "desprogramado",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch server/src/server.js"
+    "dev": "node --watch server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": ""
-}
+  }
