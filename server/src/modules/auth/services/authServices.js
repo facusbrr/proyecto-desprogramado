@@ -3,17 +3,17 @@ import bcrypt from "bcryptjs";
 import { generarToken } from "../../../utils/jwt.js";
 
 const registerUser = async (userData) => {
-  const { name, email, password } = userData;
+  const { nombre, apellido, email, password } = userData;
 
-  if (!name || !email || !password)
+  if (!nombre || !email || !apellido || !password)
     return console.error("Los campos son obligatorio");
   try {
     const hashPassword = await bcrypt.hash(password, 8);
     const [result] = pool.query(
-      "INSERT INTO users (name, email, password) VALUES (?, ?, ?)",
-      [name, email, hashPassword]
+      "INSERT INTO users (nombre, email, password) VALUES (?, ?, ?, ?)",
+      [nombre, apellido, email, hashPassword]
     );
-    const user = { id: result.insertId, name, email };
+    const user = { id: result.insertId, nombre, apellido, email };
     const token = generarToken(user);
     return { user, token };
   } catch (err) {

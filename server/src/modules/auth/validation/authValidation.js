@@ -1,32 +1,10 @@
-// src/modules/auth/routes/authRoutes.js
-import express from "express";
-import { check } from "express-validator";
-import {
-  registerUserController,
-  loginUserController,
-} from "../controllers/authController";
+import { z } from 'zod';
 
-const router = express.Router();
-
-router.post(
-  "/register",
-  [
-    check("name", "Name is required").not().isEmpty(),
-    check("email", "Please include a valid email").isEmail(),
-    check("password", "Password must be 6 or more characters").isLength({
-      min: 6,
-    }),
-  ],
-  registerUserController
-);
-
-router.post(
-  "/login",
-  [
-    check("email", "Please include a valid email").isEmail(),
-    check("password", "Password is required").exists(),
-  ],
-  loginUserController
-);
-
-export default router;
+export const registerSchema = z.object({
+  body: z.object({
+    nombre: z.string().min(1, 'El nombre es requerido'),
+    apellido: z.string().min(1, 'El apellido es requerido'),
+    email: z.string().email('El correo electrónico es inválido'),
+    password: z.string().min(6, 'La contraseña debe tener al menos 6 carácteres'),
+  }),
+});
