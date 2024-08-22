@@ -2,7 +2,7 @@ import pool from "../../../config/db.js";
 import bcrypt from "bcryptjs";
 import { generarToken } from "../../../utils/jwt.js";
 
-const registrarUser = async (userData) => {
+const registerUser = async (userData) => {
   const { name, email, password } = userData;
 
   if (!name || !email || !password)
@@ -35,6 +35,9 @@ const loginUser = async (loginData) => {
     if (!user || !(await bcrypt.compare(password, user.password))) {
       console.error("Sus datos son incorrectos");
     }
+
+    const token = generarToken(user);
+    return {user, token};
   } catch (err) {
     console.error("Error al inciar sesión", err.message);
     throw new Error("No se pudo iniciar sesión");

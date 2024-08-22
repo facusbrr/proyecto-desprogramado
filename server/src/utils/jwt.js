@@ -13,6 +13,11 @@ export const generarToken = (user) => {
 };
 
 // Validación del Token JWT
-export const vericarToken = (token) => {
-  return jwt.verify(process.env.JWT_SECRET);
+export const verificarToken = (token) => {
+  try {
+    return jwt.verify(token, process.env.JWT_SECRET);
+  } catch (err) {
+      console.error('Error al generar el token: ', err);
+      throw new Error('Token no valido');
+  }
 };
