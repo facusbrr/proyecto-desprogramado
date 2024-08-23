@@ -25,7 +25,7 @@ export const createPreference = async (req, res) => {
     const preference = new Preference(client);
     const result = await preference.create({ body });
     res.json({
-      payer: result.payer,
+      id: result.id,
     });
   } catch (err) {
     console.error("Fallo al crear la referencia", err.message);
