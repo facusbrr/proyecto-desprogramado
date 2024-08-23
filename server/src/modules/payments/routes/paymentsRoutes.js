@@ -5,7 +5,7 @@ import {receiveWebhook} from '../controllers/webhookController.js'
 export const routerPayment = Router();
 
 routerPayment.post('/process', validatePayment, );
-routerPayment.post('/buy-ticket', validatePreference, createPaymentPreference);
+routerPayment.post('/buy-ticket', createPaymentPreference);
 routerPayment.get('/webhook', receiveWebhook);
 
 routerPayment.get('/success', (req, res) => {
