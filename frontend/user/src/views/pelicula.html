@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <h1>CINE</h1>
+        </a>
+        <!-- Toggle Btn -->
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- SideBar Header -->
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header justify-content-center">
+            <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel">LOGO</h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- SideBar Body -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-center flex-grow-1 pe-3">
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href=" "
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown text-white px-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Películas
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href=" ">Estrenos</a></li>
+                  <li>
+                    <a class="dropdown-item" href=" ">Próximos Estrenos</a>
+                  </li>
+                  <li><a class="dropdown-item" href=" ">Películas 2D</a></li>
+                  <li><a class="dropdown-item" href=" ">Películas 3D</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href=". "
+                  >Promos</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href=" "
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+
+    <div class="d-flex flex-column m-5">
+      <div class="d-flex cartelera">
+        <img src="../assets/images/poster2.jpg" class="poster" />
+        <div class="d-flex flex-column pelicula">
+          <div class="p-5 pt-0">
+            <h1 class="fs-1 mb-4">Deadpool & Wolverine</h1>
+            <div class="d-flex">
+              <div class="w-100">
+                <h1>Sinopsis</h1>
+                <p>
+                  Marvel Studios presenta su mayor equivocación hasta la fecha:
+                  DEADPOOL & WOLVERINE. Un apático Wade Wilson se esfuerza por
+                  adaptarse a la vida civil. Sus días como el mercenario
+                  moralmente flexible, Deadpool, han quedado atrás. Cuando su
+                  mundo se enfrenta a una amenaza existencial, reaciamente Wade
+                  debe ponerse el traje de nuevo, junto con un aún más reacio…
+                  ¿muy reacio? ¿reacísimo?… Tiene que convencer a un
+                  súper-reacio Wolverine a… Mierda. Las sinopsis son tan
+                  increíblemente estúpidas.
+                </p>
+              </div>
+              <div
+                class="d-flex text-center gap-2 justify-content-center flex-column w-100"
+              >
+                <div>
+                  <h1>Formatos</h1>
+                  <p>2D, 3D</p>
+                </div>
+                <div>
+                  <h1>Género</h1>
+                  <p>Aventura</p>
+                </div>
+                <div>
+                  <h1>Duración</h1>
+                  <p>2 Horas</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2"></div>
+          </div>
+          <h1>Funciones</h1>
+          <div class="d-flex text-center justify-content-center gap-5">
+            <div class="d-flex justify-content-center gap-2">
+              <a
+                href="../views/checkout.html"
+                class="btn btn-primary btn-lg active"
+                role="button"
+                aria-pressed="true"
+                >16:00 2D</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary btn-lg active"
+                role="button"
+                aria-pressed="true"
+                >20:00 2D</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary btn-lg active"
+                role="button"
+                aria-pressed="true"
+                >22:00 3D</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white pt-5 mt-5">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-8 col-md-6 mb-4 mb-md-0">
+              <img src="assets/logo.png" class="h-25 mb-3" alt="" />
+              <p></p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0 links">
+                <li>
+                  <a href="about.html" class="text-white text-decoration-none"
+                    >Sobre nosotros</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white text-decoration-none"
+                    >Contacto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="condiciones.html"
+                    class="text-white text-decoration-none"
+                    >Términos y condiciones</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="privacidad.html"
+                    class="text-white text-decoration-none"
+                    >Política de privacidad</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="mb-4" />
+
+        <!-- Section: Social media -->
+        <section class="mb-4 text-center">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="index.html">cine.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+  <script type="module" src="../scripts/home.js"></script>
+</html>
