@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <h1>CINE</h1>
+        </a>
+        <!-- Toggle Btn -->
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- SideBar Header -->
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header justify-content-center">
+            <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel">LOGO</h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- SideBar Body -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-center flex-grow-1 pe-3">
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href=" "
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown text-white px-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Películas
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href=" ">Estrenos</a></li>
+                  <li>
+                    <a class="dropdown-item" href=" ">Próximos Estrenos</a>
+                  </li>
+                  <li><a class="dropdown-item" href=" ">Películas 2D</a></li>
+                  <li><a class="dropdown-item" href=" ">Películas 3D</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href=". "
+                  >Promos</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href=" "
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+
+    <main>
+      <div class="container">
+        <div class="pt-5 text-center">
+          <h2>Comprá tu entrada</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Detalles</span>
+              <span class="badge badge-secondary badge-pill"></span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li
+                class="list-group-item d-flex justify-content-between lh-condensed"
+              >
+                <div>
+                  <h6 class="my-0">Deadpool & Wolverine x1</h6>
+                  <small class="text-muted">16:00</small>
+                  <small class="text-muted">2D</small>
+                </div>
+                <span class="text-muted">$2.500</span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total</span>
+                <strong>$2.500</strong>
+              </li>
+            </ul>
+
+            <form class="card p-2">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Código promocional"
+                />
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-secondary">
+                    Obtener
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Información de compra</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder=""
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">Ingrese un nombre válido.</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName">Apellido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder=""
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Ingrese un apelldio válido.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="email">Email </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="tu@ejemplo.com"
+                  />
+                  <div class="invalid-feedback">Ingrese un email válido.</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email"> Confirmar Email </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="tu@ejemplo.com"
+                  />
+                  <div class="invalid-feedback">Ingrese un email válido.</div>
+                  <div class="invalid-feedback">
+                    Ingrese un apelldio válido.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="email">D.N.I </label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="DNI"
+                    placeholder=" "
+                  />
+                  <div class="invalid-feedback">Ingrese un email válido.</div>
+                </div>
+              </div>
+
+              <h4 class="mb-3">Método de pago</h4>
+
+              <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                  <input
+                    id="credit"
+                    name="paymentMethod"
+                    type="radio"
+                    class="custom-control-input"
+                    checked
+                    required
+                  />
+                  <label class="custom-control-label" for="credit"
+                    >Tarjeta de Credito</label
+                  >
+                </div>
+                <div class="custom-control custom-radio">
+                  <input
+                    id="debit"
+                    name="paymentMethod"
+                    type="radio"
+                    class="custom-control-input"
+                    required
+                  />
+                  <label class="custom-control-label" for="debit"
+                    >Tarjeta de Débito</label
+                  >
+                </div>
+                <div class="custom-control custom-radio">
+                  <input
+                    id="mercadopago"
+                    name="paymentMethod"
+                    type="radio"
+                    class="custom-control-input"
+                    required
+                  />
+                  <label class="custom-control-label" for="mercadopago"
+                    >MercadoPago</label
+                  >
+                </div>
+              </div>
+
+              <div id="credit-card-details">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="cc-name">Nombre y Apellido </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-name"
+                      placeholder=""
+                      required
+                    />
+                    <small class="text-muted"> </small>
+                    <div class="invalid-feedback">Name on card is required</div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="cc-number">Núnmero de tarjeta de crédito</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-number"
+                      placeholder=""
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Credit card number is required
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <label for="cc-expiration">Fecha de expiración</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-expiration"
+                      placeholder=""
+                      required
+                    />
+                    <div class="invalid-feedback">Expiration date required</div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="cc-cvv">Código de seguridad</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cc-cvv"
+                      placeholder=""
+                      required
+                    />
+                    <div class="invalid-feedback">Security code required</div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="mercadopago-button" style="display: none">
+                <button class="btn btn-primary btn-lg btn-block" type="button">
+                  Pagar con MercadoPago
+                </button>
+              </div>
+              <hr class="mb-4" />
+              <button class="btn btn-primary btn-lg btn-block" type="submit">
+                Confirmar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white pt-5 mt-5">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-8 col-md-6 mb-4 mb-md-0">
+              <img src="assets/logo.png" class="h-25 mb-3" alt="" />
+              <p></p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0 links">
+                <li>
+                  <a href="about.html" class="text-white text-decoration-none"
+                    >Sobre nosotros</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white text-decoration-none"
+                    >Contacto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="condiciones.html"
+                    class="text-white text-decoration-none"
+                    >Términos y condiciones</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="privacidad.html"
+                    class="text-white text-decoration-none"
+                    >Política de privacidad</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="mb-4" />
+
+        <!-- Section: Social media -->
+        <section class="mb-4 text-center">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="index.html">cine.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+  <script type="module" src="../scripts/checkout.js"></script>
+</html>

@@ -11964,4 +11964,72 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+h1, .h1 {
+  font-family: Arial;
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding-top: 20px;
+}
+.wrapper section {
+  width: 80%;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, auto);
+  margin: 20px 0;
+  margin: 0 auto;
+}
+.wrapper section .item {
+  padding: 0 10px;
+  transition: 250ms all;
+  height: 100%;
+  cursor: pointer;
+}
+.wrapper section .item:hover {
+  margin: 0 15px;
+  transform: scale(1.05);
+}
+.wrapper section .item img {
+  height: 350px;
+}
+.wrapper section .item p {
+  color: white;
+}
+.wrapper section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.wrapper section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.wrapper section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  a.arrow__btn {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
