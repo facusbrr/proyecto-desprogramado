@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <h1>CINE</h1>
+            </a>
+            <!-- Toggle Btn -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- SideBar Header -->
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header justify-content-center">
+                    <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> LOGO </h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <!-- SideBar Body -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" aria-current="page" href=" ">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown text-white px-2 ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Películas
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href=" ">Estrenos</a></li>
+                                <li><a class="dropdown-item" href=" ">Próximos Estrenos</a></li>
+                                <li><a class="dropdown-item" href=" ">Películas 2D</a></li>
+                                <li><a class="dropdown-item" href=" ">Películas 3D</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" aria-current="page" href=". ">Promos</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" aria-current="page" href=" ">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carousel1" class="carousel carousel-light slide container-fluid  col-lg-8 carousel1"
+        data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Items -->
+        <div class="carousel-inner  ">
+            <div class="carousel-item  active box-shadow-inset" data-bs-interval="3000">
+                <img src="../assets/images/deadpool.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption  d-md-block bg-dark">
+                    <h1>Deadpool y Wolverine</h1>
+                    <button type="button" class="btn btn-primary">Comprar Entradas</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="" class="d-block w-100 " alt="...">
+                <div class="carousel-caption  d-md-block bg-dark">
+                    <h5></h5>
+
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <a target="_blank" rel="noopener">
+                    <img src="assets/c3.jpg" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption  d-md-block bg-dark">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Carousel 2 -->
+    <div class="container">
+        <p class="text-white text-center fs-2 title">Estrenos</p>
+    </div>
+    <div class="row d-flex align-items-center container mx-auto">
+
+        <div class="col-1 d-flex align-items-center justify-content-center control2">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+        </div>
+
+        <div class="col-10">
+            <div id="carousel2" class="carousel carousel-light slide carousel2" data-bs-ride="carousel">
+                <div class="carousel-inner col-10">
+                    <div class="carousel-item active px-3" data-bs-interval="3500">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="img-box ratio ratio-16x9"><img src="" class="img-fluid" alt="">
+                                </div>
+                                <p class="text-center text-white fs-4 position-relative">Deadpool & Wolverine
+                                </p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img-box ratio ratio-16x9"><img src=" " class="img-fluid" alt="">
+                                </div>
+                                <p class="text-center text-white fs-4 position-relative">Alien: Romulus</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img-box ratio ratio-16x9"><img src=" " class="img-fluid" alt="">
+                                </div>
+                                <p class="text-center text-white fs-4 position-relative">Mi Villano Favorito 4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item px-3" data-bs-interval="3500">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="img-box ratio ratio-16x9"><img src=" " class="img-fluid" alt="">
+                                </div>
+                                <p class="text-center text-white fs-4 position-relative"></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img-box ratio ratio-16x9"><img src=" " class="img-fluid" alt="">
+                                </div>
+                                <p class="text-center text-white fs-4 position-relative">
+                                </p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img-box ratio ratio-16x9"><img src=" " class="img-fluid" alt="">
+                                </div>
+                                <p class="text-center text-white fs-4 position-relative">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item px-3" data-bs-interval="3500">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="img-box ratio ratio-16x9"><img src="" class="img-fluid" alt="">
+                                </div>
+                                <p class="text-center text-white fs-4 position-relative"></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img-box ratio ratio-16x9"><img src="" class="img-fluid" alt="">
+                                </div>
+                                <p class="text-center text-white fs-4 position-relative"></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img-box ratio ratio-16x9"><img src="" class="img-fluid" alt="">
+                                </div>
+                                <p class="text-center text-white fs-4 position-relative">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-1 d-flex align-items-center justify-content-center control2">
+            <button class="carousel-control-next " type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white pt-5 bg-dark">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-8 col-md-6 mb-4 mb-md-0">
+                        <img src="assets/logo.png" class="h-25 mb-3" alt="">
+                        <p>
+
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <ul class="list-unstyled mb-0 links">
+                            <li>
+                                <a href="about.html" class="text-white text-decoration-none ">Sobre nosotros</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="text-white text-decoration-none ">Contacto</a>
+                            </li>
+                            <li>
+                                <a href="condiciones.html" class="text-white text-decoration-none ">Términos y
+                                    condiciones</a>
+                            </li>
+                            <li>
+                                <a href="privacidad.html" class="text-white text-decoration-none ">Política de
+                                    privacidad</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+
+            <hr class="mb-4" />
+
+            <!-- Section: Social media -->
+            <section class="mb-4 text-center">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 Copyright:
+            <a class="text-white" href="index.html">cine.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+<script type="module" src="../scripts/home.js"></script>
+
+</html>

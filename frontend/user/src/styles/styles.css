@@ -1,0 +1,257 @@
+body {
+  height: 100vh;
+  background: url() rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white !important;
+  background-attachment: fixed;
+  padding-top: 5rem !important;
+}
+
+/* Navbar */
+
+.navbar {
+  box-shadow: 0 0 10px #000;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.offcanvas-title {
+  height: 50px;
+}
+
+.dropdown-menu {
+  --bs-dropdown-padding-y: 0 !important;
+}
+
+.dropdown-item {
+  --bs-dropdown-item-padding-x: 1.5rem !important;
+  --bs-dropdown-item-padding-y: 0.5rem !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  transition: 0.2s linear;
+  color: #6b757d !important;
+}
+
+.dropdown-item:hover {
+  transition: 0.2s linear;
+}
+
+/* Carousel Header */
+
+.carousel1 {
+  border-radius: 20px;
+  margin: 30px auto;
+  box-shadow: 0 8px 15px -4px #000;
+  padding: 0 !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1 !important;
+}
+.carousel1 .carousel-control-prev-icon,
+.carousel1 .carousel-control-next-icon {
+  scale: 2;
+}
+
+.carousel1 .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-top: 5px;
+}
+.carousel1 .carousel-indicators {
+  margin-bottom: 0.15px !important;
+}
+
+.carousel .carousel-inner {
+  border-radius: 15px !important;
+}
+
+.carousel1 .carousel-item {
+  height: 35vw;
+  overflow: hidden !important;
+}
+
+.carousel1 .carousel-item img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  scale: 1.2;
+  overflow: hidden !important;
+}
+
+#carousel1 .bg-dark {
+  --bs-bg-opacity: 0 !important;
+}
+
+.carousel-caption {
+  bottom: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  padding-bottom: 3rem !important;
+  overflow: hidden !important;
+}
+
+.carousel-caption h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px black;
+}
+
+.carousel-caption p {
+}
+
+/* carousel 2 */
+
+.carousel2 {
+  padding: 0 !important;
+  border-radius: 10px !important;
+}
+
+.carousel2 .carousel-inner {
+  border-radius: 0 !important;
+  padding: 0 10px;
+}
+
+.carousel2 .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-top: 5px;
+}
+
+.indicators2 {
+  margin-bottom: 0.1 !important ;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.carousel2 .img-box img {
+  border-radius: 10px !important;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  transition: 0.1s linear;
+}
+
+.carousel2 .img-box img:hover {
+  transform: scale(1.05);
+}
+
+.carousel2 .img-box {
+  overflow: hidden;
+  border-radius: 10px !important;
+  border: rgb(98, 158, 83, 0) 3px solid;
+  transition: 0.1s linear;
+}
+
+.carousel2 .img-box:hover {
+  border: #6b757d 3px solid;
+}
+
+.carousel2 .container {
+  margin-bottom: 0 !important;
+}
+
+.control2 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.control2 .carousel-control-prev,
+.control2 .carousel-control-next {
+  position: relative !important;
+  width: 5vw;
+  height: 5vw;
+  scale: 2;
+  top: -2rem;
+}
+
+.carousel2 .carousel-inner p {
+  text-shadow: 2px 2px 4px black !important;
+}
+
+.title {
+  text-shadow: 2px 2px 4px black !important;
+}
+
+/* Footer */
+.pie-pagina {
+  display: flex;
+  flex-direction: row;
+  padding: 74.4px 120px;
+  justify-content: space-around;
+  font-family: "Lexend Deca", sans-serif;
+  color: #6b757d;
+}
+
+.info img:hover {
+  cursor: pointer;
+}
+
+.links {
+  justify-content: start;
+  align-content: center;
+}
+
+.links li {
+  text-decoration: none;
+  color: #6b757d;
+  margin: 1rem 0 !important;
+}
+
+.links a:hover {
+  color: #629e53 !important;
+  transition: 0.2s linear;
+  opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 0 !important;
+  }
+
+  .fs-4 {
+    font-size: 500px !important;
+  }
+  .navbar {
+    padding: 10px !important;
+  }
+  .fixed-top {
+    position: static !important;
+  }
+
+  .carousel1 {
+    border-radius: 0 !important;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .carousel button {
+    bottom: -70%;
+  }
+  .carousel .carousel-inner {
+    border-radius: 0 !important;
+  }
+  .carousel1 .carousel-item {
+    height: 60vw;
+    overflow: hidden;
+  }
+  .carousel1 .carousel-control-prev-icon,
+  .carousel1 .carousel-control-next-icon {
+    scale: 1;
+  }
+}
