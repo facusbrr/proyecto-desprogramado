@@ -16,9 +16,8 @@ export const createPreference = async (req, res) => {
         },
       ],
       back_urls: {
-        success: "https://93cb-138-121-113-27.ngrok-free.app/success",
+        success: "http://localhost:5500/frontend/user/src/views/home.html",
         failure: "https://93cb-138-121-113-27.ngrok-free.app/failure",
-        pending: "https://93cb-138-121-113-27.ngrok-free.app/pending",
       },
       auto_return: "approved",
     };

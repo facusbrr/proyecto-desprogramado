@@ -8,7 +8,7 @@ document
     e.preventDefault();
     try {
       const orderData = {
-        title: "wolve",
+        title: "Deadpool & Wolverine",
         quantity: 1,
         price: 2500,
       };
