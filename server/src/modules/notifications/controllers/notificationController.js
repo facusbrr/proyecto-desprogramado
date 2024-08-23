@@ -1,15 +1,20 @@
-const { readData } = require('../../utils/fileUtils');
-const { sendTicketDetails } = require('../services/twilioService');
+import { readData } from "../../utils/fileUtils";
+import { sendTicketDetails } from "../services/twilioService";
 
 const processTicket = async () => {
-  const data = readData('src/data/ventas.json');
+  const data = readData("src/data/ventas.json");
 
   if (data) {
-    const { customer_phonenumber, customer_name, customer_lastname, customer_dni } = data.usuario;
+    const {
+      customer_phonenumber,
+      customer_name,
+      customer_lastname,
+      customer_dni,
+    } = data.usuario;
     const { seat_number, total_price, payment_method } = data.ticket;
-    
-    const movieTitle = 'Avengers: Endgame'; // Asegúrate de tener este dato
-    const paymentReceipt = 'https://example.com/receipt/12345'; // Asegúrate de tener este dato
+
+    const movieTitle = "Avengers: Endgame"; // Asegúrate de tener este dato
+    const paymentReceipt = "https://example.com/receipt/12345"; // Asegúrate de tener este dato
 
     await sendTicketDetails(
       customer_phonenumber,
@@ -21,4 +26,4 @@ const processTicket = async () => {
   }
 };
 
-module.exports = { processTicket };
+export default { processTicket };
