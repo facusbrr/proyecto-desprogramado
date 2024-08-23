@@ -1,5 +1,5 @@
-import { Router } from 'express';
-import { createPaymentPreference } from '../controllers/paymentController.js';
-export const routerPayment = Router();
+import express from "express";
+import { createPreference } from "../services/paymentsServices.js";
+export const paymentRoutes = express.Router();
 
-routerPayment.post('/create-preference', createPaymentPreference);
+paymentRoutes.post("/create-preference", createPreference);
